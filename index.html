@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCT_WD_4 | Task Manager - Jahnavi JKUAD6140</title>
+  <link rel="stylesheet" href="todo-style.css">
+</head>
+<body>
+  <header>
+    SCT_WD_4: Task Manager for Students - Jahnavi | JKUAD6140
+  </header>
+
+  <section class="profile">
+    <h2>👤 Profile</h2>
+    <form id="profileForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="userCode" placeholder="User Code (JKUAD6140)" required>
+      <button type="submit">Update Profile</button>
+    </form>
+    <div id="profileInfo"></div>
+  </section>
+
+  <section class="task-form">
+    <h2>📝 Add New Task</h2>
+    <input type="text" id="taskTitle" placeholder="Task Title">
+    <textarea id="taskDescription" placeholder="Task Description"></textarea>
+    <input type="datetime-local" id="taskDate">
+    <button onclick="addTask()">Add Task</button>
+  </section>
+
+  <div class="filters">
+    <button onclick="filterTasks('all')">All Tasks</button>
+    <button onclick="filterTasks('completed')">Completed</button>
+    <button onclick="filterTasks('pending')">Pending</button>
+  </div>
+
+  <section class="task-list" id="taskList"></section>
+
+  <section class="extras">
+    <h3>💡 Motivational Quotes</h3>
+    <ul>
+      <li>“The future depends on what you do today.” – Mahatma Gandhi</li>
+      <li>“Success is the sum of small efforts repeated.”</li>
+    </ul>
+
+    <h3>❤️ Health Tips for Students</h3>
+    <ul>
+      <li>Hydrate every 2 hours</li>
+      <li>Stretch and walk after 45 minutes of sitting</li>
+      <li>Sleep at least 7 hours</li>
+    </ul>
+  </section>
+
+  <footer>
+    Developed by Jahnavi | SCT_WD_4 | JKUAD6140
+  </footer>
+
+  <script src="todo-script.js"></script>
+</body>
+</html>

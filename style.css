@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe4e1, #f0fff0, #e6f7ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+section {
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffffdd;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #cc0066;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 2px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+.task-list {
+  margin-top: 1.5rem;
+}
+
+.task {
+  background: #f9f9ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  position: relative;
+}
+
+.task.completed {
+  background: #d4edda;
+  border-color: #28a745;
+  text-decoration: line-through;
+}
+
+.task .actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  margin-right: 10px;
+  background-color: #009688;
+}
+
+.filters button:hover {
+  background-color: #00796b;
+}
+
+footer {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
