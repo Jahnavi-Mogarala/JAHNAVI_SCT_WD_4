@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCT_WD_4 | Task Manager - Jahnavi JKUAD6140</title>
-  <link rel="stylesheet" href="todo-style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCT_WD_4 | Student Task Hub - Jahnavi JKUAD6140</title>
+  <link rel="stylesheet" href="todo-style.css" />
 </head>
 <body>
   <header>
-    SCT_WD_4: Task Manager for Students - Jahnavi | JKUAD6140
+    <h1>SCT_WD_4 - Student Task Hub | Jahnavi | JKUAD6140</h1>
+    <p>Manage your life like a pro – Tasks, Health, Timers, Motivation, and More!</p>
   </header>
 
   <section class="profile">
-    <h2>👤 Profile</h2>
+    <h2>Profile Settings</h2>
     <form id="profileForm">
-      <input type="text" id="name" placeholder="Name" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="text" id="userCode" placeholder="User Code (JKUAD6140)" required>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="userCode" placeholder="Code (e.g. JKUAD6140)" required />
       <button type="submit">Update Profile</button>
     </form>
     <div id="profileInfo"></div>
   </section>
 
   <section class="task-form">
-    <h2>📝 Add New Task</h2>
-    <input type="text" id="taskTitle" placeholder="Task Title">
-    <textarea id="taskDescription" placeholder="Task Description"></textarea>
-    <input type="datetime-local" id="taskDate">
+    <h2>Add New Task</h2>
+    <input type="text" id="taskTitle" placeholder="Task Title" />
+    <textarea id="taskDescription" placeholder="Description"></textarea>
+    <input type="datetime-local" id="taskDate" />
     <button onclick="addTask()">Add Task</button>
   </section>
 
   <div class="filters">
-    <button onclick="filterTasks('all')">All Tasks</button>
+    <button onclick="filterTasks('all')">All</button>
     <button onclick="filterTasks('completed')">Completed</button>
     <button onclick="filterTasks('pending')">Pending</button>
   </div>
 
   <section class="task-list" id="taskList"></section>
 
+  <section class="tools">
+    <h2>Live Clock</h2>
+    <div id="clock"></div>
+
+    <h2>Study Timer</h2>
+    <div>
+      <input type="number" id="timerMinutes" placeholder="Minutes" />
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+      <div id="timerDisplay"></div>
+    </div>
+  </section>
+
   <section class="extras">
-    <h3>💡 Motivational Quotes</h3>
+    <h3>Motivational Quotes</h3>
     <ul>
-      <li>“The future depends on what you do today.” – Mahatma Gandhi</li>
-      <li>“Success is the sum of small efforts repeated.”</li>
+      <li>"Dream big. Start small. Act now."</li>
+      <li>"Stay positive, work hard, and make it happen."</li>
+      <li>"Discipline is the bridge between goals and accomplishment."</li>
     </ul>
 
-    <h3>❤️ Health Tips for Students</h3>
+    <h3>Health & Productivity Tips</h3>
     <ul>
-      <li>Hydrate every 2 hours</li>
-      <li>Stretch and walk after 45 minutes of sitting</li>
-      <li>Sleep at least 7 hours</li>
+      <li>Take power naps during study breaks</li>
+      <li>Use the Pomodoro technique: 25 min work / 5 min break</li>
+      <li>Hydration and posture matter more than you think!</li>
     </ul>
   </section>
 
   <footer>
-    Developed by Jahnavi | SCT_WD_4 | JKUAD6140
+    <p>Crafted with 💡 for students by Jahnavi | SCT_WD_4 | JKUAD6140</p>
   </footer>
 
   <script src="todo-script.js"></script>
